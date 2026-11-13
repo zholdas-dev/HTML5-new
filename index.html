@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="ad.size" content="width=240,height=400">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Переделкино Ближнее — приятные скидки</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:240px;height:400px;overflow:hidden}body{font-family:Arial,sans-serif;background:#eee9e5}
+.banner{position:relative;display:block;width:240px;height:400px;overflow:hidden;background:#eee9e5 url('background.jpg') center/100% 100% no-repeat;text-decoration:none;color:inherit}
+.title{position:absolute;top:26px;left:15px;margin:0;color:white;font-size:21px;letter-spacing:-.55px;line-height:1.02;font-weight:700}
+.mark{position:relative;isolation:isolate;display:inline-block;white-space:nowrap;padding:1px 2px;margin-left:-2px}
+.mark:before{content:'';position:absolute;inset:0;z-index:-1;background:#b9e66b;transform:scaleX(0);transform-origin:left;animation:marker 1.05s cubic-bezier(.25,.1,.25,1) var(--start) forwards}
+.title .mark,.number{animation:darken .35s ease calc(var(--start) + .62s) forwards}
+.price{position:absolute;top:94px;left:15px;color:#fff;display:flex;align-items:baseline;gap:3px;font-size:15px;line-height:1.1}
+.number{font-size:25px;font-weight:700;line-height:1.04}
+.metro{position:absolute;top:120px;left:16px;display:flex;align-items:center;gap:4px;font-size:8.7px;color:white;white-space:nowrap;text-shadow:0 1px 3px rgba(0,0,0,.35)}
+.metro svg{width:14px;height:16px;flex:none}
+.offer{position:absolute;top:301px;left:15px;margin:0;color:#142139;font-size:15px;line-height:1.1;letter-spacing:-.3px;font-weight:700}
+.offer .hurry{margin-top:3px}
+.cta{position:absolute;left:6%;right:6%;bottom:2.2%;height:7.3%;display:flex;align-items:center;justify-content:center;border-radius:12px;background:#1d4b93;color:#fff;font-size:14px;font-weight:600;letter-spacing:.1px;transform-origin:center;animation:pulse 3.2s ease-in-out infinite}
+@keyframes marker{to{transform:scaleX(1)}}@keyframes darken{to{color:#132516}}@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
+@media(prefers-reduced-motion:reduce){.mark:before{animation:none;transform:scaleX(1)}.title .mark,.number{animation:none;color:#132516}.cta{animation:none}}
+</style>
+</head>
+<body>
+<a id="click_area" class="banner" href="#" target="_blank" rel="noopener" aria-label="Переделкино Ближнее. Приятные скидки до 15 ноября. Оставить заявку">
+ <h1 class="title"><span class="mark" style="--start:.5s">Переделкино</span><br><span class="mark" style="--start:1.35s">Ближнее</span></h1>
+ <div class="price"><span>от</span><span class="mark number" style="--start:2.2s">11,8</span><span>млн ₽</span></div>
+ <div class="metro"><svg viewBox="0 0 24 28" aria-hidden="true"><path d="M12 26S2 18.8 2 10.9a10 10 0 0 1 20 0C22 18.8 12 26 12 26Z" fill="none" stroke="#f32938" stroke-width="2.4"/><path d="M5.6 15.5 8.4 7.8l3.6 5.1 3.6-5.1 2.8 7.7h-2.5l-.9-2.6-3 4.1-3-4.1-.9 2.6Z" fill="#f32938"/></svg><span>Рассказовка · 7 мин. пешком</span></div>
+ <p class="offer"><span class="mark" style="--start:3.05s">Приятные скидки</span><br><span class="mark" style="--start:3.9s">до 15 ноября!</span><br><span class="mark hurry" style="--start:4.75s">Успейте!</span></p>
+ <span class="cta">Оставить заявку</span>
+</a>
+<script>
+(function(){var a=document.getElementById('click_area');if(window.yandexHTML5BannerApi&&typeof window.yandexHTML5BannerApi.getClickURLNum==='function'){a.href=window.yandexHTML5BannerApi.getClickURLNum(1)}else{a.addEventListener('click',function(e){e.preventDefault()})}})();
+</script>
+</body>
+</html>
